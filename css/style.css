@@ -31,6 +31,13 @@ a[href^="http://tongji.baidu.com"]{display: none;}
     flex: 1;
 }
 
+body{background: #241110 url(../img/bg.jpg) no-repeat center 0;}
+footer{height: 146px;background: #191919 url(../img/footer.jpg) repeat 0 0;}
+header{height: 472px;background: url(../img/header.png) no-repeat center 0;}
+nav{width: 1060px;height: 151px;margin: 0 auto;line-height: 67px;}
+nav a{width: 177px;color: #e7cfb9;font-size: 20px;display: inline-block;text-align: center;}
+nav a.home{width: 337px;text-indent: -99999px;}
+.wrapper{padding: 43px 0 63px;background: url(../img/grey.png) repeat 0 0;}
 
 @media screen and (max-width: 999px){
 }
