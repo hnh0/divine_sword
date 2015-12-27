@@ -69,6 +69,18 @@ article h1{font-size: 28px;color: #240808;text-align: center;border-bottom: 1px 
 article h1 span{display: block;font-size: 14px;color: #84524a;padding: 10px 0 20px;}
 article p{line-height: 28px;text-indent: 28px;}
 
+.list_tabs{line-height: 62px;font-size: 20px;color: #200505;overflow: hidden;margin: 0 14px;}
+.list_tabs a{width: 25%;height: 62px;display: block;float: left;text-align: center;border-bottom: 1px solid #2f221a;}
+.list_tabs a.current,
+.list_tabs a:hover{height: 57px;border-bottom: 6px solid #833c2e;text-decoration: none;}
+.list{margin: 0 40px;padding: 15px 0 25px;}
+.list a{height: 37px;line-height: 37px;display: block;white-space: nowrap;color: #000000;font-size: 14px;border-bottom: 1px dotted #955e5e;}
+.list a .list_type{float: left;color: #681919;}
+.list a .list_time{float: right;color: #681919;}
+.pgn{margin: 0 40px;padding: 0 0 25px;font-size: 14px;}
+.pgn *{min-width: 16px;display: inline-block;padding: 0 5px;line-height: 26px;text-align: center;border: 1px solid #833c2e;border-radius: 2px;}
+.pgn span{background: #833c2e;color: #fff;border-color: #833c2e;}
+
 @media screen and (max-width: 999px){
 }
 		
