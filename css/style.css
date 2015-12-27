@@ -32,12 +32,42 @@ a[href^="http://tongji.baidu.com"]{display: none;}
 }
 
 body{background: #241110 url(../img/bg.jpg) no-repeat center 0;}
+.float{width: 199px;height: 422px;padding: 37px 0 0 57px;position: fixed;right: 0;top: 50%;margin-top: -230px;background: url(../img/float.png) no-repeat center 0;}
+.float.hide{margin-right: -214px;}
+.float .float_toggle{width: 21px;height: 182px;position: absolute;left: 0;text-indent: -99999px;margin: 0 0 0 21px;}
+.float_toggle::before{content: '';width: 0;height: 0;margin: -4px 0 0 10px;position: absolute;top: 50%;left: 0;border-width: 8px;border-style: solid;border-color: transparent transparent transparent #ba9569;}
+.hide .float_toggle::before{margin-left: 0;border-color:  transparent #ba9569 transparent transparent;}
+.float img{width: 168px;height: 168px;margin-bottom: 18px;display: block;padding: 7px;background: #fff;}
+.float img ~ a{width: 182px;height: 55px;line-height: 55px;text-align: center;text-indent: 30px;display: block;margin-bottom: 10px;color: #fff;font-size: 18px;}
 footer{height: 146px;background: #191919 url(../img/footer.jpg) repeat 0 0;}
-header{height: 472px;background: url(../img/header.png) no-repeat center 0;}
-nav{width: 1060px;height: 151px;margin: 0 auto;line-height: 67px;}
-nav a{width: 177px;color: #e7cfb9;font-size: 20px;display: inline-block;text-align: center;}
-nav a.home{width: 337px;text-indent: -99999px;}
+.footer_core{width: 1000px;margin: 0 auto;color: #373637;font-size: 12px;padding: 40px 0 0;text-align: center;line-height: 20px;}
+.footer_core a{color: #373637;}
+header{height: 472px;}
+nav{width: 1240px;margin: 0 auto;line-height: 67px;}
+nav a{width: 177px;height: 88px;color: #e7cfb9;font-size: 20px;display: block;float: left;text-align: center;text-shadow: 0 0 10px #000, 0 0 10px #000;text-decoration: none;background: url(../img/nav.png) no-repeat 0 0;}
+nav a.nav_0{width: 275px;text-indent: 80px;}
+nav a.nav_0.current,
+nav a.nav_0:hover{background-position: 0 bottom;}
+nav a.nav_1{width: 177px;background-position: -275px 0;}
+nav a.nav_1.current,
+nav a.nav_1:hover{background-position: -275px bottom;}
+nav a.home{width: 337px;background-position: -452px 0;}
+nav a.home span{width: 100%;height: 151px;background: url(../img/logo.png) no-repeat center 0;text-indent: -99999px;display: block;}
+nav a.nav_3{width: 177px;background-position: -966px 0;}
+nav a.nav_3.current,
+nav a.nav_3:hover{background-position: -966px bottom;}
+nav a.nav_4{width: 274px;background-position: right 0;text-indent: -70px;}
+nav a.nav_4.current,
+nav a.nav_4:hover{background-position: right bottom;text-indent: -70px;}
+nav a:hover{text-decoration: none;}
 .wrapper{padding: 43px 0 63px;background: url(../img/grey.png) repeat 0 0;}
+.core{width: 1000px;margin: 0 auto;background: #b39c8c;}
+.crumbs{color: #200505;font-size: 20px;padding: 0 5px;line-height: 40px;border-bottom: 1px solid #8e6259;padding-top: 10px;margin: 0 15px;}
+.crumbs a{font-size: 14px;float: right;padding-right: 26px;background: url(../img/back.png) no-repeat right 12px;}
+article{color: #681919;padding: 20px 0 40px;margin: 0 40px;font-size: 14px;}
+article h1{font-size: 28px;color: #240808;text-align: center;border-bottom: 1px dotted #9d6f6b;margin-bottom: 20px;}
+article h1 span{display: block;font-size: 14px;color: #84524a;padding: 10px 0 20px;}
+article p{line-height: 28px;text-indent: 28px;}
 
 @media screen and (max-width: 999px){
 }
