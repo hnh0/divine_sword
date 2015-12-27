@@ -84,7 +84,7 @@ article p{line-height: 28px;text-indent: 28px;}
 .pgn span{background: #833c2e;color: #fff;border-color: #833c2e;}
 
 @media screen and (max-width: 999px){
-body{background-size: 1000px auto;}
+body{background: url(../img/home_bg.jpg) no-repeat center 0;background-size: 1080px auto;}
 
 .mobile_logo{display: block;height: 88px;position: relative;}
 .mobile_logo a{width: 219px;height: 151px;display: block;text-indent: -99999px;margin: 0 auto;background: url(../img/logo.png) no-repeat center center;}
