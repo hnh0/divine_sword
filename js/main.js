@@ -21,4 +21,9 @@ var sword = window.sword || {};
 			var bullets = document.getElementById('position').getElementsByTagName('li');
 		}
 	};
+	$('.tab_item').on('click',function () {
+		var type = $(this).attr('type');
+		$('.tab_detail_item').addClass('hidden');
+		$('#' + type + '_item').removeClass('hidden');
+	})
 })();
