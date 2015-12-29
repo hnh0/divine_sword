@@ -9,31 +9,28 @@
 	header{height: 300px !important;}
 	.download_list .download_item{
 		display: block;
-		height: 44px;
-		width: 88px;
+		height: 87px;
+		width: 309px;
 		margin: 0 auto;
 		line-height: 44px;
 		font-size: 14px;
 		color: #e7cfb9;
 		text-align: left;
-		padding-left: 66px;
+		text-indent: -99999px;
 		background: url(../img/btn_bg.jpg) no-repeat;
-		background-size: 154px 43px;
+		background-size: 100% 100%;
 		text-shadow: 0 0 10px #000,
 	               0 0 20px  #000;
 	}
 	.download_list .download_item#ios_official{
 		background: url(../img/ios_btn.jpg) no-repeat;
-		background-size: 154px 43px;
 	}
 	.download_list .download_item#ios_break{
 		background: url(../img/iosbreak_btn.jpg) no-repeat;
-		background-size: 154px 43px;
 		margin:0 32px;
 	}
 	.download_list .download_item#android{
 		background: url(../img/android_btn.jpg) no-repeat;
-		background-size: 154px 43px;
 	}
 	
 	.download_list .download_item#ios_break{
@@ -41,22 +38,26 @@
 	}
 	.contact_wrap {
 		position: relative;
-		height: 70px;
+		/*height: 70px;*/
 		width: 100%;
+		padding: 10px 0;
 		line-height: 10px;
 		margin-top: 30px;
 		background: url(../img/contact_bg.png) no-repeat;
-		background-size: 500px 70px;
+		background-size: 600px 100%;
 	}
 	.contact_wrap .contact_lbl {
-		display: inline-block;
-		width: 25%; 
+		width: 100px; 
 		text-align: center;
 		font-size: 9px;
 		font-weight: bold;
 		color: #dbae8d;
-		position: absolute;
-		top: 31px;
+		font-size: 14px;
+		line-height: 104px;
+		/*position: absolute;*/
+		/*top: 31px;*/
+		float: left;
+		display: block;
 	}
 	.contact_qq{top: 6px;}
 	.contact_wb{top: 22px;}
@@ -64,12 +65,14 @@
 	.contact_kf{top: 56px;}
 
 	.contact_wrap .contact_item {
-		display: inline-block;
-		font-size: 7px;
+		font-size: 14px;
 		color: #180d05;
 		margin: 0px;
-		position: absolute;
-		left: 108px;
+		/*position: absolute;*/
+		/*left: 108px;*/
+		display: block;
+		line-height: 26px;
+		margin-left: 120px;
 	}
 
 	.figure{

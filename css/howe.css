@@ -30,6 +30,7 @@
 	text-shadow: 0 0 10px #000,
                0 0 20px  #000;
     position: relative;
+    text-indent: -99999px;
 }
 /*.download_list .download_item .download_icon{
 	display: inline-block;
