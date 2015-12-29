@@ -22,6 +22,20 @@
 		text-shadow: 0 0 10px #000,
 	               0 0 20px  #000;
 	}
+	.download_list .download_item#ios_official{
+		background: url(../img/ios_btn.jpg) no-repeat;
+		background-size: 154px 43px;
+	}
+	.download_list .download_item#ios_break{
+		background: url(../img/iosbreak_btn.jpg) no-repeat;
+		background-size: 154px 43px;
+		margin:0 32px;
+	}
+	.download_list .download_item#android{
+		background: url(../img/android_btn.jpg) no-repeat;
+		background-size: 154px 43px;
+	}
+	
 	.download_list .download_item#ios_break{
 		margin: 10px auto;
 	}
@@ -111,8 +125,34 @@
 		/*margin-left: 148px;*/
 		/*margin-top: 100px;*/
 	}
+	.figure_item_btn{
+		display: block;
+		position: absolute;
+		width: 100px;
+		height: 44px;
+		line-height: 44px;
+		color: #fff2e5;
+		font-size: 9px;
+		text-align: center;
+		cursor: pointer;
+		z-index: 100;
+	}
+	.figure_item_btn.shou_btn{
+		top: 50px;
+	    left: 108px;
+	}
+	.figure_item_btn.ren_btn{
+		top: 189px;
+	    left: 82px;
+	}
+	.figure_item_btn.xuezu_btn{
+		top: 303px;
+	    left: 134px;
+	}
+
+
 	.light_box{
-		display: none;
+		/*display: none;*/
 		background: rgba(0,0,0,0.5);
 		width: 100%;
 		height: 100%;
@@ -127,26 +167,26 @@
 	.swipe-wrap .wrap{}
 	.swipe_img{position: relative;}
 	.swipe_imgs{display: block; width: 100%;height: 100%;}
-	.img_index{position: absolute;bottom: -20px;right: 0; text-align: center;}
+	.img_index{bottom: -20px;right: 0; text-align: center;}
 	.img_index #position{width: 100%;}
 	.img_index #position li{display: inline-block;width: 80px;height: 6px;background: #494949;margin: 0 1px;cursor: pointer;}
 	.img_index #position li.on{background: #663514;}
 	.light_model{
-		display: none;
-		width: 1001px;
-		height: 663px;
+		/*display: none;*/
+		width: 280px;
+		height: 190px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		margin-left: -500px;
-		margin-top: -331px;
+		margin-left: -139px;
+		margin-top: 260px;
 		z-index: 201;
 	}
 	.light_model .tab_list{
-		height: 96px;
+		height: 30px;
 		width: 100%;
-		line-height: 96px;
-		font-size: 24px;
+		line-height: 30px;
+		font-size: 12px;
 		color: #feffff;
 		position: absolute;
 		left: 0;
@@ -158,17 +198,187 @@
 		text-align: center;
 	}
 	.tab_detail_item{
-		width: 1001px;
-		height: 663px;
+		width: 280px;
+		height: 190px;
 	}
 	.tab_detail_item#shou_item{
 		background: url(../img/shou_tab.png) no-repeat;
+		background-size: 312px 207px;
 	}
 	.tab_detail_item#ren_item{
 		background: url(../img/ren_tab.png) no-repeat;
+		background-size: 312px 207px;
 	}
 	.tab_detail_item#xuezu_item{
 		background: url(../img/xuezu_tab.png) no-repeat;
+		background-size: 312px 207px;
+	}
+
+	.shou_list,.ren_list,.xuezu_list{
+		overflow: hidden;
+		zoom: 1;
+		padding: 38px 5px 10px 5px;
+	}
+	.shou_list .shou_item{
+		float: left;
+		width: 50px;
+		height: 140px;
+		margin:0 2px;
+		background: url(../img/shou_list.png) no-repeat;
+		background-size: 298px 163px;
+		cursor: pointer;
+	}
+	/*.shou_list .shou_item:hover{
+		background: url(../img/shou_list_hover.png) no-repeat;
+	}*/
+	.shou_list .shou_item#shou_0{
+		background-position: 0 0;
+	}
+	.shou_list .shou_item#shou_1{
+		background-position: -62px 0;
+	}
+	.shou_list .shou_item#shou_2{
+		background-position: -120px 0;
+	}
+	.shou_list .shou_item#shou_3{
+		background-position: -185px 0;
+	}
+	.shou_list .shou_item#shou_4{
+		background-position: -240px 0;
+	}
+
+	.ren_list .ren_item{
+		float: left;
+		width: 50px;
+		height: 140px;
+		margin:0 8px;
+		background: url(../img/ren_list.png) no-repeat;
+		background-size: 298px 163px;
+		cursor: pointer;
+	}
+/*	.ren_list .ren_item:hover{
+		background: url(../img/ren_list_hover.png) no-repeat;
+	}*/
+	.ren_list .ren_item#ren_0{
+		background-position: -10px 0;
+	}
+	.ren_list .ren_item#ren_1{
+		background-position: -89px 0;
+	}
+	.ren_list .ren_item#ren_2{
+		background-position: -162px 0;
+	}
+	.ren_list .ren_item#ren_3{
+		background-position: -236px 0;
+	}
+
+	.xuezu_list .xuezu_item{
+		float: left;
+		width: 50px;
+		height: 140px;
+		margin:0 8px;
+		background: url(../img/xuezu_list.png) no-repeat;
+		background-size: 298px 163px;
+		cursor: pointer;
+	}
+	.light_model .light_model_close{
+		position: absolute;
+		width: 28px;
+		height: 28px;
+		top: 1px;
+	    right: -28px;
+		background: rgba(0,0,0,0.8) url(../img/tab_close.png) no-repeat center 0;
+		background-size: 28px 28px;
+		cursor: pointer;
+	}
+	/*.xuezu_list .xuezu_item:hover{
+		background: url(../img/xuezu_list_hover.png) no-repeat;
+	}*/
+	.xuezu_list .xuezu_item#xuezu_0{
+		background-position: -10px 0;
+	}
+	.xuezu_list .xuezu_item#xuezu_1{
+		background-position: -89px 0;
+	}
+	.xuezu_list .xuezu_item#xuezu_2{
+		background-position: -162px 0;
+	}
+	.xuezu_list .xuezu_item#xuezu_3{
+		background-position: -235px 0;
+	}
+
+	.figure_detail{
+		position: absolute;
+		left: 0;
+		top: 46px;
+		width: 100%;
+	}
+	.figure_detail img{
+		width: 100px;
+	}
+	.figure_txt{
+		position: absolute;
+		top: -6px;
+		right: 10px;
+		padding:4px 2px;
+		width: 160px;
+		height: 131px;
+		background: rgba(255,255,255,0.3);
+		overflow: hidden;
+	}
+	.figure_txt .figure_title{
+		border-left: 3px #200505 solid;
+		padding-left: 7px;
+		font-size: 10px;
+		font-weight: bold;
+		height: 12px;
+		line-height: 12px;
+	}
+	.figure_txt .figure_main{
+		padding-top: 6px;
+		font-size: 7px;
+		line-height: 15px;
+		border-top: 1px #000 solid;
+		margin-top: 5px;
+	}
+	.figure_txt .figure_main p{
+		text-indent: 28px;
+	}
+
+	.map_detail{
+		position: absolute;
+		left: 100px;
+		top: 94px;
+		width: 100%;
+	}
+	.map_detail img{
+		display: block;
+		float: left;
+	}
+	.map_txt{
+		float: left;
+		padding:40px 25px;
+		width: 320px;
+		height: 425px;
+		background: rgba(255,255,255,0.3);
+	}
+	.map_txt .map_title{
+		border-left: 6px #200505 solid;
+		padding-left: 14px;
+		font-size: 20px;
+		font-weight: bold;
+		height: 24px;
+		line-height: 24px;
+	}
+	.map_txt .map_main{
+		padding-top: 16px;
+		font-size: 14px;
+		line-height: 26px;
+		border-top: 1px #000 solid;
+		margin-top: 10px;
+	}
+	.map_txt .map_main p{
+		text-indent: 28px;
 	}
 
 }
