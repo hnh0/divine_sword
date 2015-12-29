@@ -39,24 +39,24 @@
 	top:14px;
 }*/
 .download_list .download_item#ios_official{
-	background: url(../img/ios_btn.jpg) no-repeat;
+	background: url(../img/download_btn.jpg) no-repeat 0 0;
 }
 .download_list .download_item#ios_break{
-	background: url(../img/iosbreak_btn.jpg) no-repeat;
+	background: url(../img/download_btn.jpg) no-repeat center 0;
 	margin:0 32px;
 }
 .download_list .download_item#android{
-	background: url(../img/android_btn.jpg) no-repeat;
+	background: url(../img/download_btn.jpg) no-repeat right 0;
 }
 .download_list .download_item#ios_official:hover{
-	background: url(../img/ios_btn_hover.jpg) no-repeat;
+	background: url(../img/download_btn.jpg) no-repeat 0 bottom;
 }
 .download_list .download_item#ios_break:hover{
-	background: url(../img/iosbreak_btn_hover.jpg) no-repeat;
+	background: url(../img/download_btn.jpg) no-repeat center bottom;
 	margin:0 32px;
 }
 .download_list .download_item#android:hover{
-	background: url(../img/android_btn_hover.jpg) no-repeat;
+	background: url(../img/download_btn.jpg) no-repeat right bottom;
 }
 .contact_wrap{
 	height: 59px;
