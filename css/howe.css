@@ -311,6 +311,7 @@
 	padding:40px 25px;
 	width: 320px;
 	height: 420px;
+	overflow: auto;
 	background: rgba(255,255,255,0.3);
 }
 .figure_txt .figure_title{
